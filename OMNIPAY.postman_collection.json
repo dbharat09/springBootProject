@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "43d10aa1-fe8d-409a-919a-0dfbe49a2b06",
+		"name": "OMNIPAY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/omniPay/save/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\":\"1234\",\r\n    \"refNo\":\"abcd\",\r\n    \"actualAmount\":\"123\",\r\n    \"currency\":\"INR\",\r\n    \"tax\":\"2\",\r\n    \"serviceTax\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/omniPay/save/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"omniPay",
+						"save",
+						"transaction"
+					]
+				},
+				"description": "use this API to create the transaction."
+			},
+			"response": []
+		}
+	]
+}
